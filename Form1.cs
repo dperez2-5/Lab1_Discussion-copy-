@@ -5,9 +5,9 @@ namespace Lab1_Discussion
         private readonly SmartDevice[] _devices = new SmartDevice[3];
         public Form1()
         {
-            _devices[0] = new SmartLight("SL1", "Living Room Light", 50);
-            _devices[1] = new SmartThermostat("ST1", "Bedroom Thermostat", 22.0);
-            _devices[2] = new SmartLight("SL2", "Kitchen Light", 75);
+            _devices[0] = new SmartLight("SL1", "Living Room Light", 73);
+            _devices[1] = new SmartThermostat("ST1", "Bedroom Thermostat", 17.6);
+            _devices[2] = new SmartLight("SL2", "Kitchen Light", 25);
             InitializeComponent();
         }
 
@@ -74,5 +74,7 @@ namespace Lab1_Discussion
             _devices[2].Status = !_devices[2].Status;
             updateDeviceStatus();
         }
+
+
     }
 }
